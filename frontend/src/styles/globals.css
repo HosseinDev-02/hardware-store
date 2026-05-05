@@ -1,11 +1,6 @@
 @import "tailwindcss";
 @import './fonts.css';
 
-
-:root {
-  
-}
-
 @theme {
   --font-vazir-regular: "Vazir Regular";
   --font-vazir-medium: "Vazir Medium";
@@ -13,14 +8,199 @@
   --font-vazir-bold: "Vazir Bold";
   --font-vazir-thin: "Vazir Thin";
   --font-vazir-light: "Vazir Light";
+
+  /* App layout */
+  --color-app-bg: var(--app-bg);
+  --color-app-surface: var(--app-surface);
+  --color-app-header: var(--app-header);
+
+  /* Borders */
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  /* Text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  /* Icons */
+  --color-icon: var(--icon);
+
+  /* Cards & Tables */
+  --color-card: var(--card);
+  --color-table: var(--table);
+  --color-table-hover: var(--table-hover);
+  --color-table-header: var(--table-header);
+
+  /* Search */
+  --color-search-bg: var(--search-bg);
+  --color-search-text: var(--search-text);
+  --color-search-placeholder: var(--search-placeholder);
+
+  /* Buttons */
+  --color-btn-primary: var(--btn-primary);
+  --color-btn-primary-hover: var(--btn-primary-hover);
+  --color-btn-primary-text: var(--btn-primary-text);
+
+  --color-btn-secondary: var(--btn-secondary);
+  --color-btn-secondary-hover: var(--btn-secondary-hover);
+  --color-btn-secondary-text: var(--btn-secondary-text);
+
+  /* Links */
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
+
+  /* Forms */
+  --color-input-bg: var(--input-bg);
+  --color-input-border: var(--input-border);
+  --color-input-text: var(--input-text);
+  --color-input-focus: var(--input-focus);
+
+  /* Accent */
+  --color-accent-bg: var(--accent-bg);
+  --color-accent-text: var(--accent-text);
 }
 
-@theme inline {
-  
+:root {
+
+  /* Layout */
+  --app-bg: #f1f5f9;
+  /* slate-100 */
+  --app-surface: #ffffff;
+  --app-header: #ffffff;
+
+  /* Borders */
+  --border: #e2e8f0;
+  /* slate-200 */
+  --border-strong: #cbd5e1;
+  /* slate-300 */
+
+  /* Text */
+  --text-primary: #1e293b;
+  /* slate-800 */
+  --text-secondary: #64748b;
+  /* slate-500 */
+
+  /* Icons */
+  --icon: #475569;
+  /* slate-600 */
+
+  /* Cards & Tables */
+  --card: #ffffff;
+  --table: #ffffff;
+  --table-hover: #f8fafc;
+  /* slate-50 */
+  --table-header: #475569;
+  /* slate-600 */
+
+  /* Search */
+  --search-bg: #e2e8f0;
+  /* slate-200 */
+  --search-text: #1e293b;
+  --search-placeholder: #64748b;
+
+  /* Buttons */
+  --btn-primary: #4f46e5;
+  /* indigo-600 */
+  --btn-primary-hover: #4338ca;
+  /* indigo-700 */
+  --btn-primary-text: #ffffff;
+
+  --btn-secondary: #e2e8f0;
+  /* slate-200 */
+  --btn-secondary-hover: #cbd5e1;
+  /* slate-300 */
+  --btn-secondary-text: #1e293b;
+
+  /* Links */
+  --link: #4f46e5;
+  --link-hover: #4338ca;
+
+  /* Forms */
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  /* slate-300 */
+  --input-text: #1e293b;
+  --input-focus: #6366f1;
+  /* indigo-500 */
+
+  /* Accent */
+  --accent-bg: #e0e7ff;
+  /* indigo-100 */
+  --accent-text: #4338ca;
+  /* indigo-700 */
 }
+
+.dark {
+
+  /* Layout */
+  --app-bg: #0f172a;
+  /* slate-900 */
+  --app-surface: #1e293b;
+  /* slate-800 */
+  --app-header: #1e293b;
+
+  /* Borders */
+  --border: #334155;
+  /* slate-700 */
+  --border-strong: #475569;
+  /* slate-600 */
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  /* slate-100 */
+  --text-secondary: #cbd5e1;
+  /* slate-300 */
+
+  /* Icons */
+  --icon: #cbd5e1;
+
+  /* Cards & Tables */
+  --card: #334155;
+  /* slate-700 */
+  --table: #334155;
+  --table-hover: #475569;
+  /* slate-600 */
+  --table-header: #e2e8f0;
+
+  /* Search */
+  --search-bg: #475569;
+  --search-text: #f1f5f9;
+  --search-placeholder: #94a3b8;
+
+  /* Buttons */
+  --btn-primary: #6366f1;
+  /* indigo-500 */
+  --btn-primary-hover: #4f46e5;
+  --btn-primary-text: #ffffff;
+
+  --btn-secondary: #475569;
+  /* slate-600 */
+  --btn-secondary-hover: #64748b;
+  /* slate-500 */
+  --btn-secondary-text: #f1f5f9;
+
+  /* Links */
+  --link: #818cf8;
+  /* indigo-400 */
+  --link-hover: #a5b4fc;
+  /* indigo-300 */
+
+  /* Forms */
+  --input-bg: #334155;
+  --input-border: #475569;
+  --input-text: #f1f5f9;
+  --input-focus: #818cf8;
+
+  /* Accent */
+  --accent-bg: #4338ca;
+  /* indigo-700 */
+  --accent-text: #e0e7ff;
+  /* indigo-100 */
+}
+
+
+@theme inline {}
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    
-  }
+  :root {}
 }

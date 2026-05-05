@@ -10,7 +10,7 @@ export default function RootLayout({
       dir="rtl"
       className={`h-full`}
     >
-      <body className="h-screen p-8 flex flex-col bg-slate-100 font-vazir-medium">{children}</body>
+      <body className="h-screen overflow-hidden p-10 flex flex-col font-vazir-regular bg-app-bg text-text-primary">{children}</body>
     </html>
   );
 }
