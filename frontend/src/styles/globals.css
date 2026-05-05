@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import './fonts.css';
+
+
+:root {
+  
+}
+
+@theme {
+  --font-vazir-regular: "Vazir Regular";
+  --font-vazir-medium: "Vazir Medium";
+  --font-vazir-black: "Vazir Black";
+  --font-vazir-bold: "Vazir Bold";
+  --font-vazir-thin: "Vazir Thin";
+  --font-vazir-light: "Vazir Light";
+}
+
+@theme inline {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+}
