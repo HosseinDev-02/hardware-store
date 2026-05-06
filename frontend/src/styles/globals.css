@@ -207,3 +207,9 @@
 @media (prefers-color-scheme: dark) {
   :root {}
 }
+
+/* Admin Panel */
+
+.menu-item {
+  @apply w-full h-full flex items-center justify-center gap-2 text-lg font-vazir-medium transition-all duration-200;
+}
