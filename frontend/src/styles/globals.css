@@ -8,6 +8,9 @@
   --font-vazir-bold: "Vazir Bold";
   --font-vazir-thin: "Vazir Thin";
   --font-vazir-light: "Vazir Light";
+  --font-aquire: "Aquire";
+  --font-aquire-light: "Aquire Light";
+  --font-aquire-bold: "Aquire Bold";
 
   /* App layout */
   --color-app-bg: var(--app-bg);

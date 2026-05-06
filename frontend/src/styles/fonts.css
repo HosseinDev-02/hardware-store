@@ -27,3 +27,18 @@
     font-family: "Vazir Thin";
     src: url('/fonts/Vazir/Vazir-Thin-FD-WOL.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: "Aquire";
+    src: url('/fonts/Aquire/Aquire.otf') format('otf');
+}
+
+@font-face {
+    font-family: "Aquire Light";
+    src: url('/fonts/Aquire/AquireLight.otf') format('otf');
+}
+
+@font-face {
+    font-family: "Aquire Bold";
+    src: url('/fonts/Aquire/AquireBold.otf') format('otf');
+}
