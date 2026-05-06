@@ -14,7 +14,7 @@ export default function Sidebar() {
             {/* menu */}
             <div>
                 {/* menu items */}
-                <ul className="flex justify-center flex-col items-center">
+                <ul className="admin-panel__menu flex flex-col">
                     {/* item */}
                     {menuItems.map((item) => (
                         <MenuItem key={item.id} {...item} />

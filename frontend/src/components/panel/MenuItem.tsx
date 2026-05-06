@@ -7,7 +7,11 @@ import { usePathname } from "next/navigation";
 
 export default function MenuItem(item: MenuItem) {
     const pathname = usePathname();
-    console.log('pathname :', pathname);
+    const splitPathname = pathname.split('/').filter(Boolean)
+
+    console.log(splitPathname);
+    console.log(pathname);
+    
     const iconMap: Record<string, JSX.Element> = {
         داشبورد: <Gauge size={20}/>,
         محصولات: <Package size={20} />,
@@ -17,10 +21,10 @@ export default function MenuItem(item: MenuItem) {
         سفارشات: <ShoppingCart size={20} />,
     };
     return (
-        <li className="h-16 w-full">
+        <li className="admin-panel__menu-item h-16 w-full">
             <Link
-                className={`menu-item ${pathname.includes(item.href) ? 'bg-app-bg text-text-primary' : 'text-text-secondary hover:bg-app-bg hover:text-text-primary'}`}
-                href={`${item.href}`}
+                className={`menu-item ${pathname === `/admin-panel/${item.href}` ? 'bg-app-bg text-text-primary' : 'text-text-secondary hover:bg-app-bg hover:text-text-primary'}`}
+                href={`/admin-panel/${item.href}`}
             >
                 {/* icon */}
                 <span>{iconMap[item.title]}</span>

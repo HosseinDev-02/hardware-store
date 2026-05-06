@@ -211,5 +211,9 @@
 /* Admin Panel */
 
 .menu-item {
-  @apply w-full h-full flex items-center justify-center gap-2 text-lg font-vazir-medium transition-all duration-200;
+  @apply px-4 w-full h-full flex items-center gap-2 text-lg font-vazir-medium transition-all duration-200;
+}
+
+.admin-panel__menu > .admin-panel__menu-item {
+  @apply border-b! border-border!;
 }
