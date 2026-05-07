@@ -1,5 +1,6 @@
 import Sidebar from "@/components/Sidebar";
 import "../../styles/globals.css";
+import AdminPanelHeader from "@/components/panel/AdminPanelHeader";
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -15,7 +16,7 @@ export default function RootLayout({
                     {/* content */}
                     <div className="col-span-10 w-full rounded-l-2xl flex flex-col">
                         {/* header */}
-                        <div className="w-full h-20 bg-white shadow-[0_0_10px_4px_rgba(0,0,0,5%)] rounded-2xl mb-4 flex items-center justify-center"></div>
+                        <AdminPanelHeader/>
 
                         {/* body */}
                         {children}

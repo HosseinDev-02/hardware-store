@@ -1,4 +1,4 @@
-import { MenuItem } from "./type-definition";
+import { MenuItem, UserMenuItem } from "./type-definition";
 
 export const menuItems: MenuItem[] = [
     {
@@ -32,3 +32,16 @@ export const menuItems: MenuItem[] = [
         href: "roles",
     },
 ];
+
+export const userProfileItems: UserMenuItem[] = [
+    {
+        id: '1',
+        title: 'پروفایل',
+        href: '#'
+    },
+    {
+        id: '2',
+        title: 'تنظیمات حساب',
+        href: '#'
+    },
+]
