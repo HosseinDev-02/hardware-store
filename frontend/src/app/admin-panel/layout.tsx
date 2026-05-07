@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "@/components/panel/Sidebar";
 import "../../styles/globals.css";
 import AdminPanelHeader from "@/components/panel/AdminPanelHeader";
 export default function RootLayout({

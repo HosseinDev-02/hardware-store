@@ -8,9 +8,9 @@ export default function RootLayout({
     <html
       lang="fa"
       dir="rtl"
-      className={`h-full`}
+      className={``}
     >
-      <body className="h-screen overflow-hidden p-10 flex flex-col font-vazir-regular bg-app-bg text-text-primary">{children}</body>
+      <body className="min-h-screen font-vazir-regular bg-app-bg">{children}</body>
     </html>
   );
 }

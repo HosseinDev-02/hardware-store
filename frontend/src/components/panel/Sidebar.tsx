@@ -1,5 +1,5 @@
-import { menuItems } from "@/lib/fake-data";
-import MenuItem from "./panel/MenuItem";
+import { SidebarItems } from "@/lib/fake-data";
+import MenuItem from "./MenuItem";
 import Link from "next/link";
 import React from "react";
 import { Power } from 'lucide-react';
@@ -16,7 +16,7 @@ export default function Sidebar() {
                 {/* menu items */}
                 <ul className="admin-panel__menu flex flex-col">
                     {/* item */}
-                    {menuItems.map((item) => (
+                    {SidebarItems.map((item) => (
                         <MenuItem key={item.id} {...item} />
                     ))}
                 </ul>

@@ -1,6 +1,87 @@
-import { MenuItem, UserMenuItem } from "./type-definition";
+import { MenuItem, SidebarItem, UserMenuItem } from "./type-definition";
+
+// Main
 
 export const menuItems: MenuItem[] = [
+    {
+        id: "1",
+        title: "ابزار برقی",
+        shortName: "",
+        items: [
+            {
+                id: "1",
+                title: "دریل ها",
+                shortName: "",
+                items: [
+                    { id: "1", title: "دریل ساده", shortName: "" },
+                    { id: "2", title: "دریل جکشی", shortName: "" },
+                    { id: "3", title: "دریل گیربکسی", shortName: "" },
+                ],
+            },
+            {
+                id: "2",
+                title: "دریل ها",
+                shortName: "",
+                items: [
+                    { id: "1", title: "دریل ساده", shortName: "" },
+                    { id: "2", title: "دریل جکشی", shortName: "" },
+                    { id: "3", title: "دریل گیربکسی", shortName: "" },
+                ],
+            },
+            {
+                id: "3",
+                title: "دریل ها",
+                shortName: "",
+                items: [
+                    { id: "1", title: "دریل ساده", shortName: "" },
+                    { id: "2", title: "دریل جکشی", shortName: "" },
+                    { id: "3", title: "دریل گیربکسی", shortName: "" },
+                ],
+            },
+            {
+                id: "4",
+                title: "دریل ها",
+                shortName: "",
+                items: [
+                    { id: "1", title: "دریل ساده", shortName: "" },
+                    { id: "2", title: "دریل جکشی", shortName: "" },
+                    { id: "3", title: "دریل گیربکسی", shortName: "" },
+                ],
+            },
+        ],
+    },
+    {
+        id: "2",
+        title: "ابزار برقی",
+        shortName: "",
+        items: [
+            {
+                id: "1",
+                title: "دریل ها",
+                shortName: "",
+            },
+            {
+                id: "2",
+                title: "دریل ها",
+                shortName: "",
+            },
+            {
+                id: "3",
+                title: "دریل ها",
+                shortName: "",
+            },
+            {
+                id: "4",
+                title: "دریل ها",
+                shortName: "",
+            },
+        ],
+    },
+];
+
+// Admin Panel
+
+export const SidebarItems: SidebarItem[] = [
     {
         id: "6",
         title: "داشبورد",
@@ -35,13 +116,13 @@ export const menuItems: MenuItem[] = [
 
 export const userProfileItems: UserMenuItem[] = [
     {
-        id: '1',
-        title: 'پروفایل',
-        href: '#'
+        id: "1",
+        title: "پروفایل",
+        href: "#",
     },
     {
-        id: '2',
-        title: 'تنظیمات حساب',
-        href: '#'
+        id: "2",
+        title: "تنظیمات حساب",
+        href: "#",
     },
-]
+];

@@ -210,11 +210,13 @@
   /* indigo-100 */
 }
 
+@utility container {
+  padding-inline: 0.625rem;
+  margin-inline: auto;
 
-@theme inline {}
-
-@media (prefers-color-scheme: dark) {
-  :root {}
+  @media screen and (min-width: 768px) {
+    padding-inline: 1.25rem;
+  }
 }
 
 /* Admin Panel */

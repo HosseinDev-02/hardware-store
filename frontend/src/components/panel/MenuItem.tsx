@@ -1,11 +1,11 @@
 'use client';
-import { MenuItem } from "@/lib/type-definition";
+import { SidebarItem } from "@/lib/type-definition";
 import Link from "next/link";
 import React, { JSX } from "react";
 import { Package, LayoutGrid, Users, Shield, ShoppingCart, Gauge } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-export default function MenuItem(item: MenuItem) {
+export default function MenuItem(item: SidebarItem) {
     const pathname = usePathname();
     const splitPathname = pathname.split('/').filter(Boolean)
 
